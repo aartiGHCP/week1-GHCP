@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Clear loading message
       activitiesList.innerHTML = "";
+      // Reset activity select so options don't duplicate and reflect current activities
+      activitySelect.innerHTML = '<option value="" disabled selected>Select an activity</option>';
 
       // Populate activities list
       Object.entries(activities).forEach(([name, details]) => {
